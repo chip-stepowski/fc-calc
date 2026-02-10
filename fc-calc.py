@@ -1,10 +1,11 @@
 # get user input
-user_choice = input("Would you like to calculate fahrenit to celsius or celsius to fahrenheit? Enter 1 for F to C or 2 for C to F: ")
-
-print(user_choice)
+user_choice = input("Enter '1' for Fahrenheit to Celsius, or '2' for Celsius to Fahrenheit: > ")
 
 if user_choice == '1':
-    enter_fahrenheit = int(input("Enter a number in fahrenheit: "))
-    print(enter_fahrenheit)
+    enter_fahrenheit = int(input("Enter a number in Fahrenheit: > "))
     calc_celsisus = (enter_fahrenheit - 32) // (9/5)
-    print(f'{enter_fahrenheit} fahrenheit is equal to {calc_celsisus} celsius!')
+    print(f'{enter_fahrenheit} Fahrenheit is equal to {calc_celsisus} Celsius!')
+else:
+    enter_celsisus = int(input("Enter a number in Celsius: > "))
+    calc_fahrenheit = (enter_celsisus * 9/5) + 32
+    print(f'{enter_celsisus} Celsius is equal to {calc_fahrenheit} Fahrenheit!')
