@@ -1,6 +1,14 @@
-# get user input
-user_choice = input("Enter '1' for Fahrenheit to Celsius, or '2' for Celsius to Fahrenheit: > ")
+while True:
+    # get user input
+    user_choice = input("Enter '1' for Fahrenheit to Celsius, or '2' for Celsius to Fahrenheit: > ")
 
+    # check user input is only or 2
+    if user_choice == '1' or user_choice == '2':
+        break
+    else:
+        print(f'Sorry, choice not valid. Please enter 1 or 2.')
+
+# calculate based on choice
 if user_choice == '1':
     enter_fahrenheit = int(input("Enter a number in Fahrenheit: > "))
     calc_celsisus = (enter_fahrenheit - 32) // (9/5)
