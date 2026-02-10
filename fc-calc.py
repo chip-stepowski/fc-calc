@@ -3,10 +3,11 @@ while True:
     user_choice = input("Enter '1' for Fahrenheit to Celsius, or '2' for Celsius to Fahrenheit: > ")
 
     # check user input is only or 2
-    if user_choice == '1' or user_choice == '2':
-        break
-    else:
+    if user_choice not in ['1', '2']:
         print(f'Sorry, choice not valid. Please enter 1 or 2.')
+    else:
+        break
+        
 
 # calculate based on choice
 if user_choice == '1':
