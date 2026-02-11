@@ -8,9 +8,9 @@ while playing:
         user_choice = input("Enter '1' for Fahrenheit to Celsius, '2' for Celsius to Fahrenheit, or 'Q' for Quit: ")
 
         # check if user input is in this list
-        if user_choice not in ['1', '2', 'Q']:
+        if user_choice.upper() not in ['1', '2', 'Q']:
             print(f'Sorry, choice not valid. Please enter 1 or 2.')
-        elif user_choice == 'Q':
+        elif user_choice.upper() == 'Q':
             sys.exit()
         else:
             break
