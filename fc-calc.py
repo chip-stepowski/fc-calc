@@ -1,7 +1,6 @@
 import sys
 
-playing = True
-while playing:
+while True:
 
     while True:
         # get user input
